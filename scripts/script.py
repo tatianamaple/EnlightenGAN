@@ -24,7 +24,7 @@ if opt.train:
 		--fineSize 320 \
         --patchSize 32 \
 		--skip 1 \
-		--batchSize 32 \
+		--batchSize 1 \
         --self_attention \
 		--use_norm 1 \
 		--use_wgan 0 \
