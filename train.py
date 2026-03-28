@@ -10,6 +10,7 @@ def get_config(config):
         return yaml.load(stream, Loader=yaml.FullLoader)
 
 opt = TrainOptions().parse()
+opt.checkpoints_dir = "/content/drive/MyDrive/checkpoints_eg"
 config = get_config(opt.config)
 data_loader = CreateDataLoader(opt)
 dataset = data_loader.load_data()
